@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Afasia"
+    }
+  },
+  "defaultProject": "Afasia",
+  "cli": {
+    "analytics": "a7a7848a-6000-45db-89af-05349d6f4567"
+  }
 }

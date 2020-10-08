@@ -1,5 +1,11 @@
+* {
+    color: white;
+    background-color: darkslategray;
+}
+
 form {
     padding: 2% 20%;
+    border-radius: 2em;
 }
 
 h2 {
@@ -8,5 +14,5 @@ h2 {
 
 .container {
     margin-top: 5%;
-    background-color: darkgray;
+    border-radius: 2em;
 }

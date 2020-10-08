@@ -1,15 +1,13 @@
-div.container{
+div.container {
     min-height: 91vh;
     min-width: 100vh;
     padding: 20px 20px 20px 20px;
     text-align: center;
     /*margin-left: auto;
     margin-right: auto;*/
-
 }
 
-
-#menuCards{
+#menuCards {
     /*display: flex;*/
     display: inline-block;
     padding: 10px 10px 10px 10px;
@@ -24,7 +22,8 @@ div.container{
     /*-ms-transition:all .9s ease; /* Opera */
     transition: transform 0.9s ease;
 }
-#menuCards:hover{
+
+#menuCards:hover {
     transform: scale(1.10);
     /*-webkit-transform:scale(1.10);
     -moz-transform:scale(1.10);
@@ -33,10 +32,10 @@ div.container{
     transform:scale(1.10);*/
 }
 
-#img{
+#img {
     border-radius: 1em;
 }
 
-#enlace{
+#enlace {
     color: black;
 }

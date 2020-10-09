@@ -15,6 +15,7 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { FooterComponent } from './components/shared/footer/footer.component';
 import { RegistroComponent } from './components/registro/registro.component';
 import {ContactoComponent} from './components/bodycontacto/body.component';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import {ContactoComponent} from './components/bodycontacto/body.component';
     NavbarComponent,
     FooterComponent,
     RegistroComponent,
-    ContactoComponent
+    ContactoComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,

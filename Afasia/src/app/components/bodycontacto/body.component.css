@@ -1,0 +1,36 @@
+#img1 {
+    border-top-left-radius: 2em;
+}
+
+#img3 {
+    border-top-right-radius: 2em;
+}
+
+#card {
+    border-radius: 2em;
+    background-color: darkslategrey;
+}
+
+#cardbody {
+    background-color: white;
+}
+
+#container {
+    background-color: darkslategray;
+}
+
+body {
+    background-color: darkslategray;
+}
+
+@media (max-width: 768px) {
+    #img1 {
+        border-radius: 2em;
+    }
+    #img2 {
+        border-radius: 2em;
+    }
+    #img3 {
+        border-radius: 2em;
+    }
+}

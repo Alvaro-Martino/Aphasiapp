@@ -2,17 +2,18 @@
     border-top-left-radius: 2em;
 }
 
-#img3 {
+#img1 {
     border-top-right-radius: 2em;
 }
 
 #card {
     border-radius: 2em;
-    background-color: darkslategrey;
+    background-color: white;
+    height: 88vh;
 }
 
 #cardbody {
-    background-color: white;
+    text-align: center;
 }
 
 #container {
@@ -21,16 +22,4 @@
 
 body {
     background-color: darkslategray;
-}
-
-@media (max-width: 768px) {
-    #img1 {
-        border-radius: 2em;
-    }
-    #img2 {
-        border-radius: 2em;
-    }
-    #img3 {
-        border-radius: 2em;
-    }
 }

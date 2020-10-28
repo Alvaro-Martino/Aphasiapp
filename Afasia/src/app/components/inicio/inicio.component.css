@@ -1,0 +1,19 @@
+body{
+    height: 100%;
+    background-color: darkslategray;
+}
+#card{
+    margin: 20px;
+    border-radius: 2em;
+    height: 90vh;
+}
+#img1{
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+}
+
+#titulo{
+    font-size: 35px;
+}

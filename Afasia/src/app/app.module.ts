@@ -17,6 +17,7 @@ import { RegistroComponent } from './components/registro/registro.component';
 import {ContactoComponent} from './components/bodycontacto/body.component';
 import { LoginComponent } from './components/login/login.component';
 import { InicioComponent } from './components/inicio/inicio.component';
+import { EjemploComponent } from './components/ejemplojuego/ejemplo.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { InicioComponent } from './components/inicio/inicio.component';
     ContactoComponent,
     LoginComponent,
     InicioComponent,
+    EjemploComponent
   ],
   imports: [
     BrowserModule,

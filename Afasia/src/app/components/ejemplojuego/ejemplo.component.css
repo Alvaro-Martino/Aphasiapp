@@ -1,0 +1,75 @@
+body {
+    height: 100%;
+    background-color: darkslategray;
+}
+
+#card {
+    margin: 20px;
+    border-radius: 2em;
+    height: 90vh;
+    padding: 10px 10px 10px 10px;
+    border: 3px solid black;
+}
+
+#img1 {
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+    border-bottom-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+    height: 500px;
+}
+
+#titulo {
+    font-size: 35px;
+}
+
+.botonimagen {
+    border: 0px;
+    background-color: white;
+}
+
+.bienvenido {
+    text-align: center;
+    color: thistle;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.bg {
+    font-size: 100px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    background-color: skyblue;
+    height: 600px;
+    transition: 1s;
+}
+
+.containerayuda {
+    text-align: center;
+}
+
+.btn-form {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: inline-block;
+    border: 0;
+    background: #000;
+    height: 46px;
+    line-height: 46px;
+    padding: 0 20px;
+    border-radius: 6px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px
+}
+
+.btn-form:hover {
+    background: #444
+}
+
+@media (max-width: 768px) {
+    #img1 {
+        height: 400px;
+        border-radius: 2em;
+    }
+}

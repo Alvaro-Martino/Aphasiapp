@@ -3,16 +3,16 @@
     <div class="login-box animated fadeIn fast">
         <h2 class="animated fadeIn fast">Registrarse en Afasia</h2>
         <hr>
-        <form>
+        <form #userForm="ngForm" (ngSubmit)="addUser(userForm)">
 
             <label class="animated fadeIn" for="username">Usuario:
-                <input type="text" placeholder=" Introduzca su nombre de usuario">
+                <input type="text" name="name" #name="ngModel" [(ngModel)]="userService.selectedUser.name" placeholder=" Introduzca su nombre de usuario">
             </label>
             <label class="animated fadeIn" for="password">Contraseña:
-                <input type="password" placeholder=" Introduzca la contraseña">
+                <input type="password" name="pass" #pass="ngModel" [(ngModel)]="userService.selectedUser.pass" placeholder=" Introduzca la contraseña">
             </label>
             <label class="animated fadeIn" for="email">Mail:
-                <input type="email" placeholder=" Introduzca su mail">
+                <input type="email" name="email" #email="ngModel" [(ngModel)]="userService.selectedUser.email" placeholder=" Introduzca su mail">
             </label>
             <input class="animated fadeIn" type="submit" value="Registrarse">
         </form>

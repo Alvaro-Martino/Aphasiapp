@@ -1,0 +1,29 @@
+{
+    "name": "Aphasiapp",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "nodemon Backend/index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Alvaro-Martino/Aphasiapp.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Alvaro-Martino/Aphasiapp/issues"
+    },
+    "homepage": "https://github.com/Alvaro-Martino/Aphasiapp#readme",
+    "dependencies": {
+        "cors": "^2.8.5",
+        "express": "^4.17.1",
+        "mongoose": "^5.10.11",
+        "morgan": "^1.10.0"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.6"
+    }
+}

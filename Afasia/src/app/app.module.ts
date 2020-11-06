@@ -18,6 +18,8 @@ import {ContactoComponent} from './components/bodycontacto/body.component';
 import { LoginComponent } from './components/login/login.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http'
+import { InicioComponent } from './components/inicio/inicio.component';
+import { EjemploComponent } from './components/ejemplojuego/ejemplo.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +30,8 @@ import { HttpClientModule } from '@angular/common/http'
     RegistroComponent,
     ContactoComponent,
     LoginComponent,
+    InicioComponent,
+    EjemploComponent
   ],
   imports: [
     BrowserModule,

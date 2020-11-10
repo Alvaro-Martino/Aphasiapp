@@ -10,7 +10,7 @@ import { UserService } from '../../services/user.service'
 })
 export class RegistroComponent implements OnInit {
 
-  constructor(private userService: UserService) { }
+  constructor(public userService: UserService) { }
 
   ngOnInit(): void {
   }

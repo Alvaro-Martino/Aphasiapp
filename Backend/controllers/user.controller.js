@@ -1,4 +1,5 @@
 const USER = require('../models/user');
+const bcrypt = require('bcryptjs');
 
 const userCtrl = {};
 
@@ -14,6 +15,7 @@ userCtrl.getUser = async(req, res) => {
 };
 
 userCtrl.createUser = async(req, res) => {
+    req.body.pass = bcrypt.hashSync(req.body.pass);
     const user = new USER(req.body);
     await user.save();
     res.json({

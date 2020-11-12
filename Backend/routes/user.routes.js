@@ -7,7 +7,6 @@ router.post('/', userCtrl.createUser);
 router.get('/:id', userCtrl.getUser);
 router.put('/:id', userCtrl.editUser);
 router.delete('/:id', userCtrl.deleteUser);
-
-
+router.post('/login', userCtrl.login);
 
 module.exports = router;

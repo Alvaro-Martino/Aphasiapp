@@ -1,28 +1,39 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
 
-<head>
-    <meta charset="utf-8">
+    <link rel="stylesheet" />
+  </head>
 
-    <link rel="stylesheet">
-</head>
-
-<body>
-
+  <body>
     <div class="login-box animated fadeIn fast">
-        <h2 class="animated fadeIn fast">Iniciar sesión en Afasia</h2>
-        <form>
+      <h2 class="animated fadeIn fast">Iniciar sesión en Afasia</h2>
+      <form
+        #frmLogin="ngForm"
+        class="login-container"
+        (ngSubmit)="onLogin(frmLogin)"      >
+        <label class="animated fadeIn" for="email">Email:</label>
+        <input
+          type="email"
+          name="email"
+          placeholder="Introduzca su email"
+          ngModel
+          required        />
 
-            <label class="animated fadeIn" for="username">Usuario:</label>
-            <input type="text" placeholder=" Introduzca su nombre de usuario">
-
-            <label class="animated fadeIn" for="password">Contraseña:</label>
-            <input type="password" placeholder=" Introduzca la contraseña">
-            <input class="animated fadeIn" type="submit" value="Iniciar Sesión">
-            <a class="animated fadeIn" routerLink="#">¿Olvidaste tu contraseña?</a><br>
-            <a class="animated fadeIn" routerLink="/registro"> ¿No tienes una cuenta?</a>
-        </form>
+        <label class="animated fadeIn" for="password">Contraseña:</label>
+        <input
+          type="password"
+          name="password"
+          placeholder="Introduzca la contraseña"
+          ngModel
+          required        />
+        <input class="animated fadeIn" type="submit" value="Iniciar sesión" />
+        <a class="animated fadeIn" routerLink="#">¿Olvidaste tu contraseña?</a        >
+        <br />
+        <a class="animated fadeIn" routerLink="/registro">
+          ¿No tienes una cuenta?</a        >
+      </form>
     </div>
-</body>
-
+  </body>
 </html>

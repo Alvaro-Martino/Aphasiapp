@@ -32,5 +32,8 @@ export class UserService {
   deleteUser(_id: string) {
     return this.http.delete(this.URL_API + `/${_id}`);
   }
+  login( User: User ) {
+    return this.http.post(this.URL_API + `/login`, User);
+  }
 
 }

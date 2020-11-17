@@ -12,15 +12,15 @@
     background-color: white;
     height: 88vh;
     border: 3px solid black;
-}
+   }
 
 #cardbody {
     text-align: center;
     background-image: url('/assets/img/contacto1.jpg');
     border-radius: 2em ;
     
+    
 }
-
 #container {
     background-color: noney;
 }

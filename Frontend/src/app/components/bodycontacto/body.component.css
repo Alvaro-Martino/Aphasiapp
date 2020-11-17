@@ -16,12 +16,17 @@
 
 #cardbody {
     text-align: center;
+    background-image: url('/assets/img/contacto1.jpg');
+    border-radius: 2em ;
+    
 }
 
 #container {
-    background-color: darkslategray;
+    background-color: noney;
 }
 
 body {
     background-color: darkslategray;
+    
+    
 }

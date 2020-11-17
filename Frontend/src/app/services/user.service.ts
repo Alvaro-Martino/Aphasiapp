@@ -6,6 +6,7 @@ import { User } from '../models/user';
   providedIn: 'root'
 })
 export class UserService {
+  
 
   selectedUser: User;
   users: User[];
@@ -15,6 +16,9 @@ export class UserService {
   
   constructor(private http: HttpClient) { 
       this.selectedUser = new User();
+  }
+  public isLoggedIn() {
+    return sessionStorage.getItem('id') !== null;
   }
 
   getUsers() {
@@ -35,5 +39,10 @@ export class UserService {
   login( User: User ) {
     return this.http.post(this.URL_API + `/login`, User);
   }
+
+
+  /*logOut ( ) {
+    sessionStorage.clear();
+  }*/
 
 }

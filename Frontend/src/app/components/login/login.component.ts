@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { NgForm } from '@angular/forms';
 import { UserService } from '../../services/user.service';
 
 @Component({
@@ -19,10 +18,11 @@ export class LoginComponent implements OnInit {
   });*/
 
   onLogin(form):void {
-    console.log('entra');
+    console.log('todavia no entra');
       this.userService.login(form.value).subscribe(res => {
         console.log('llega');
         console.log(res);
+
       });
   };
 }

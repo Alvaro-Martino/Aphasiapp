@@ -15,7 +15,7 @@ export class UserService {
   
   constructor(private http: HttpClient) { 
       this.selectedUser = new User();
-   }
+  }
 
   getUsers() {
     return this.http.get(this.URL_API);

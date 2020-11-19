@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { UserService } from '../../services/user.service';
 import { NavbarComponent } from '../shared/navbar/navbar.component';
+import { ToastrService } from 'ngx-toastr';
+
 
 @Component({
   selector: 'app-login',
@@ -10,12 +12,20 @@ import { NavbarComponent } from '../shared/navbar/navbar.component';
   providers: [UserService],
 })
 export class LoginComponent implements OnInit {
-  constructor(public userService: UserService, private router: Router) {}
+  constructor(public userService: UserService, private router: Router, private toastr: ToastrService) {}
 
   ngOnInit(): void {}
 
   goToMenu() {
     this.router.navigate(['menu']);
+  }
+
+  showSuccess() {
+    this.toastr.success('Usuario ingresado con éxito');
+  }
+
+  showError() {
+    this.toastr.error('Hubo un problema al ingresar, intente nuevamente');
   }
 
   onLogin(form): void {
@@ -24,10 +34,16 @@ export class LoginComponent implements OnInit {
       
       console.log('llega');
       console.log(res);
-      if (res) {
+      if ( Object.keys(res.user).length !== 0) {
         sessionStorage.setItem('id', res.user.id);
+        this.showSuccess();
+        this.goToMenu();  
+        console.log('if verdadero');   
+      } else {
+        console.log('if falso');
+        this.showError();
+        window.location.reload();
       }
-      this.goToMenu();
     });
   }
 }

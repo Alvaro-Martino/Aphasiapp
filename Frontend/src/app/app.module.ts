@@ -21,6 +21,11 @@ import { HttpClientModule } from '@angular/common/http'
 import { InicioComponent } from './components/inicio/inicio.component';
 import { EjemploComponent } from './components/ejemplojuego/ejemplo.component';
 
+import { CommonModule } from '@angular/common';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+ 
+import { ToastrModule } from 'ngx-toastr';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,7 +42,10 @@ import { EjemploComponent } from './components/ejemplojuego/ejemplo.component';
     BrowserModule,
     FormsModule,
     HttpClientModule,
-    APP_ROUTING
+    APP_ROUTING,
+    CommonModule,
+    BrowserAnimationsModule, 
+    ToastrModule.forRoot(), 
   ],
   providers: [],
   bootstrap: [AppComponent]

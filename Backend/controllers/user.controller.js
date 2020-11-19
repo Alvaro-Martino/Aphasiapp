@@ -55,8 +55,12 @@ userCtrl.login = async (req, res, next) => {
     const passwordEncripted = await bcrypt.compare(password, existingUser.pass);
     console.log(passwordEncripted);
     if (!existingUser || !passwordEncripted) {
-      const error = new Error("Invalid credentials, could not log you in.");
-      return next(error);
+      res.json({
+        message: "Credenciales invalidas, intente nuevamente",
+        user: {},
+      });
+      //const error = new Error("Invalid credentials, could not log you in.");
+      //return next(error);
     }
   } catch (error) {
     console.log(error);

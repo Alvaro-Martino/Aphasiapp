@@ -27,11 +27,22 @@ export class RegistroComponent implements OnInit {
     this.toastr.success('Usuario registrado con éxito');
   }
 
+  showError() {
+    this.toastr.error('Hubo un problema al registrarse, intente nuevamente', 'ERROR');
+  }
+
   addUser(form: NgForm) {
     this.userService.postUser(form.value)
     .subscribe(res => {
       console.log(res);
-      this.showSuccess();
+      //COMENTAR EL IF SI TIRA ERROR AL LEVANTAR FRONT, LUEGO DESCOMENTAR
+      if ( res.status != 'Saved' ) {
+        this.showError();        
+      } else {
+        this.showSuccess();
+      }
+      //HASTA ACÁ
+      
       this.goToInit();
     });
 

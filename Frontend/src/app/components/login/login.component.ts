@@ -25,7 +25,7 @@ export class LoginComponent implements OnInit {
   }
 
   showError() {
-    this.toastr.error('Hubo un problema al ingresar, intente nuevamente');
+    this.toastr.error('Hubo un problema al ingresar, intente nuevamente', 'ERROR');
   }
 
   onLogin(form): void {
@@ -34,7 +34,8 @@ export class LoginComponent implements OnInit {
       
       console.log('llega');
       console.log(res);
-      if ( Object.keys(res.user).length !== 0) {
+      //COMENTAR TODO EL IF SI TIRA ERROR AL LEVANTAR EL FRONT, LUEGO DESCOMENTAR
+      if ( Object.keys(res.user).length !== 0 ) {
         sessionStorage.setItem('id', res.user.id);
         this.showSuccess();
         this.goToMenu();  
@@ -42,8 +43,8 @@ export class LoginComponent implements OnInit {
       } else {
         console.log('if falso');
         this.showError();
-        window.location.reload();
       }
+      //HASTA ACÁ
     });
   }
 }

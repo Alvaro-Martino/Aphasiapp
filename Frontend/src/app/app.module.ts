@@ -45,7 +45,10 @@ import { ToastrModule } from 'ngx-toastr';
     APP_ROUTING,
     CommonModule,
     BrowserAnimationsModule, 
-    ToastrModule.forRoot(), 
+    ToastrModule.forRoot({
+      timeOut: 6000,
+      preventDuplicates: true
+    }), 
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,31 @@
+<body>
+    <div class="containerayuda">
+        <h1 class="bienvenido" id="palabra">
+            <img class="imagencentral" src="https://www.elsoldesanluis.com.mx/incoming/v6rux1-gatitos-hermoso.png/ALTERNATES/LANDSCAPE_1140/gatitos%20hermoso.png" height="400px" alt="">
+        </h1>
+
+    </div>
+    <div id="resultadoT" class="resultadoT">
+
+        <div class="card-group">
+            <div class="card" id="card">
+                <button (click)="testFun('CORRRECTO!! 10Puntos')" id="imagen1" class="botonimagen"><h1 class="cuadradop">GATO</h1></button>
+
+            </div>
+            <div class="card" id="card">
+                <button (click)="testFun('INCORRRECTA')" id="imagen2" class="botonimagen"><h1 class="cuadradop" > PERRO</h1></button>
+
+            </div>
+            <div class="card" id="card">
+                <button (click)="testFun('INCORRRECTA')" id="imagen3" class="botonimagen"><h1 class="cuadradop">CASA</h1></button>
+
+            </div>
+            <div class="card" id="card">
+                <button (click)="testFun('INCORRRECTA')" id="imagen4" class="botonimagen"><h1 class="cuadradop">SOMBRERO</h1></button>
+
+            </div>
+
+        </div>
+    </div>
+    <h1 class="ayuda"><button id="ayuda" (click)='ayuda()' class="btn-form">HELP</button></h1>
+</body>

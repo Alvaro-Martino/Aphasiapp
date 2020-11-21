@@ -25,6 +25,8 @@ import { CommonModule } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
  
 import { ToastrModule } from 'ngx-toastr';
+import { GameMenuComponent } from './components/game-menu/game-menu.component';
+import { JuegoComponent } from './components/juego2/juego.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,10 @@ import { ToastrModule } from 'ngx-toastr';
     ContactoComponent,
     LoginComponent,
     InicioComponent,
-    EjemploComponent
+    EjemploComponent,
+    GameMenuComponent,
+    JuegoComponent
+
   ],
   imports: [
     BrowserModule,

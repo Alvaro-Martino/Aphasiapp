@@ -12,7 +12,7 @@ import { UserService } from '../../../services/user.service';
 export class NavbarComponent implements OnInit {
  
 
-  constructor(private router: Router, private userService: UserService) {
+  constructor(public router: Router, public userService: UserService) {
   }
   
   ngOnInit() {

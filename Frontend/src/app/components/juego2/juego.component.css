@@ -1,0 +1,130 @@
+body {
+    height: 100%;
+    background-color: darkslategray;
+}
+
+#card {
+    margin: 20px;
+    border-radius: 2em;
+    height: 150px;
+    padding: 10px 10px 10px 10px;
+    border: 3px solid black;
+    background-image: url("https://es.rankiapro.com/wp-content/uploads/2020/03/inversores-value-tranquilos-crisis-rankiapro.jpg");
+}
+
+.cuadradop {}
+
+#img1 {
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+    border-bottom-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+    height: 350px;
+    width: 100%;
+}
+
+.card:hover {
+    -webkit-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -ms-transform: scale(1.25);
+    -o-transform: scale(1.25);
+    transform: scale(1.25);
+    transition: 1s;
+}
+
+#titulo {
+    font-size: 35px;
+}
+
+.botonimagen {
+    border-radius: 10px 10px;
+    margin-top: 30px;
+}
+
+.imagencentral {
+    height: 300px;
+}
+
+.bienvenido {
+    text-align: center;
+    color: thistle;
+    display: block;
+    padding-top: 7px;
+}
+
+.adivinar {
+    text-align: center;
+}
+
+.bg {
+    font-size: 100px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    background-color: skyblue;
+    height: 600px;
+    transition: 1s;
+}
+
+.fondorojo {
+    background-color: red;
+}
+
+.containerayuda {
+    text-align: center;
+}
+
+.ayuda {
+    text-align: center;
+    display: block;
+    padding-bottom: 40px;
+}
+
+.btn-form {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: inline-block;
+    border: 0;
+    background: #000;
+    height: 46px;
+    line-height: 46px;
+    padding: 0 20px;
+    border-radius: 6px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px
+}
+
+.frase1 {
+    color: white;
+    text-shadow: red 0.1em 0.1em 0.2em;
+    font-family: 'Anton', sans-serif;
+    font-size: 30px
+}
+
+.frase2 {
+    color: white;
+    text-shadow: red 0.1em 0.1em 0.2em;
+    font-family: 'Anton', sans-serif;
+    font-size: 30px
+}
+
+.frase3 {
+    color: white;
+    text-shadow: red 0.1em 0.1em 0.2em;
+    font-family: 'Anton', sans-serif;
+    font-size: 30px
+}
+
+.btn-form:hover {
+    background: #444
+}
+
+@media (max-width: 768px) {
+    #img1 {
+        height: 400px;
+        border-radius: 2em;
+    }
+    .bg {
+        font-size: 80px;
+    }
+}

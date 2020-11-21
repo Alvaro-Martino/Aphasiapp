@@ -3,10 +3,18 @@ body {
     background-color: darkslategray;
 }
 
+.card {
+    margin: 20px;
+    border-radius: 2em;
+    height: 400px;
+    padding: 10px 10px 10px 10px;
+    border: 3px solid black;
+}
+
 #card {
     margin: 20px;
     border-radius: 2em;
-    height: 90vh;
+    height: 400px;
     padding: 10px 10px 10px 10px;
     border: 3px solid black;
 }
@@ -16,7 +24,91 @@ body {
     border-top-right-radius: 2em;
     border-bottom-left-radius: 2em;
     border-bottom-right-radius: 2em;
-    height: 500px;
+    height: 350px;
+    -webkit-transition: all .9s ease;
+    /* Safari y Chrome */
+    -moz-transition: all .9s ease;
+    /* Firefox */
+    -o-transition: all .9s ease;
+    /* IE 9 */
+    -ms-transition: all .9s ease;
+    /* Opera */
+}
+
+#img2 {
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+    border-bottom-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+    height: 350px;
+    -webkit-transition: all .9s ease;
+    /* Safari y Chrome */
+    -moz-transition: all .9s ease;
+    /* Firefox */
+    -o-transition: all .9s ease;
+    /* IE 9 */
+    -ms-transition: all .9s ease;
+    /* Opera */
+    width: 100%;
+}
+
+#img3 {
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+    border-bottom-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+    height: 350px;
+    -webkit-transition: all .9s ease;
+    /* Safari y Chrome */
+    -moz-transition: all .9s ease;
+    /* Firefox */
+    -o-transition: all .9s ease;
+    /* IE 9 */
+    -ms-transition: all .9s ease;
+    /* Opera */
+    width: 100%;
+}
+
+#img4 {
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+    border-bottom-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+    height: 350px;
+    -webkit-transition: all .9s ease;
+    /* Safari y Chrome */
+    -moz-transition: all .9s ease;
+    /* Firefox */
+    -o-transition: all .9s ease;
+    /* IE 9 */
+    -ms-transition: all .9s ease;
+    /* Opera */
+    width: 100%;
+}
+
+#imagen3 {
+    font-size: 25px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    transition: 1s;
+    text-align: center;
+}
+
+#imagen4 {
+    font-size: 25px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    transition: 1s;
+    text-align: center;
+    background-image: url(https://i.pinimg.com/originals/a7/23/38/a723380b503d9061935ab3f49c573981.jpg);
+    border-radius: 100px;
+}
+
+.card:hover {
+    -webkit-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -ms-transform: scale(1.25);
+    -o-transform: scale(1.25);
+    transform: scale(1.25);
+    transition: 1s;
 }
 
 #titulo {
@@ -31,21 +123,40 @@ body {
 .bienvenido {
     text-align: center;
     color: thistle;
-    display: inline-block;
-    margin-right: 10px;
+    display: block;
+    padding-top: 7px;
+}
+
+.adivinar {
+    text-align: center;
 }
 
 .bg {
     font-size: 100px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
-    background-color: skyblue;
     height: 600px;
     transition: 1s;
+    background-image: url(https://vignette.wikia.nocookie.net/cartoonica/images/c/c7/Jimmy.png/revision/latest/scale-to-width-down/300?cb=20190412020141);
+}
+
+.bt {
+    font-size: 100px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    height: 600px;
+    transition: 1s;
+    background-image: url(https://1.bp.blogspot.com/-iPwQBS3k2s0/VCgvIlEuuuI/AAAAAAAAzCs/vUIobeO8jtM/s1600/sim_homer_thinking.gif);
 }
 
 .containerayuda {
     text-align: center;
+}
+
+.ayuda {
+    text-align: center;
+    display: block;
+    padding-bottom: 40px;
 }
 
 .btn-form {
@@ -63,16 +174,65 @@ body {
     letter-spacing: 2px
 }
 
+.desaparecer {
+    transition: 1s;
+    display: none;
+    background-color: red;
+}
+
+.fondorojo {
+    background-color: red;
+}
+
+.frase1 {
+    color: white;
+    text-shadow: red 0.1em 0.1em 0.2em;
+    font-family: 'Anton', sans-serif;
+    font-size: 30px
+}
+
+.frase2 {
+    color: white;
+    text-shadow: red 0.1em 0.1em 0.2em;
+    font-family: 'Anton', sans-serif;
+    font-size: 30px
+}
+
+.frase3 {
+    color: white;
+    text-shadow: red 0.1em 0.1em 0.2em;
+    font-family: 'Anton', sans-serif;
+    font-size: 30px
+}
+
 .btn-form:hover {
     background: #444
 }
 
 @media (max-width: 768px) {
     #img1 {
-        height: 400px;
+        height: 300px;
+        border-radius: 2em;
+    }
+    #img2 {
+        height: 300px;
+        border-radius: 2em;
+    }
+    #img3 {
+        height: 300px;
+        border-radius: 2em;
+    }
+    #img4 {
+        height: 300px;
         border-radius: 2em;
     }
     .bg {
         font-size: 80px;
+    }
+    .bt {
+        font-size: 80px;
+    }
+    #imagen4 {
+        background-image: url(https://us.123rf.com/450wm/richter1910/richter19101503/richter1910150300029/37243235-el-signo-de-interrogaci%C3%B3n-que-consiste-en-un-conjunto-de-peque%C3%B1os-signos-de-interrogaci%C3%B3n.jpg?ver=6);
     }
 }
